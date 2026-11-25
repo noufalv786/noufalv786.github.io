@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Noufal V — Senior Full Stack Developer and AI Engineer with 12+ years of software development experience and 2+ years focused on AI solutions.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Noufal V | Senior Full Stack Developer & AI Engineer</title>
+  <style>
+    :root{--bg:#080d1b;--panel:#10182b;--panel2:#131e34;--text:#eef3ff;--muted:#a8b4ca;--line:#26334d;--blue:#6ea8ff;--orange:#ff9b65;--green:#8be0c0;--max:1120px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 80% 0%,#15264a 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none} a:hover{color:var(--blue)} .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#080d1be8;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--orange)}
+    .navlinks{display:flex;gap:23px;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}
+    .menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:9px;padding:8px 11px}
+    .hero{padding:92px 0 76px;display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center;min-height:570px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-.055em;margin:20px 0}
+    h1 span{background:linear-gradient(100deg,var(--blue),#a6c9ff 55%,var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:19px;color:var(--muted);max-width:680px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin:30px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:11px;font-weight:700;border:1px solid var(--line);transition:.2s}
+    .btn.primary{background:linear-gradient(100deg,#397be0,#5b9aff);border:0;color:#061126}.btn:hover{transform:translateY(-2px);color:white}.btn.primary:hover{color:#061126}
+    .hero-card{background:linear-gradient(145deg,#172541,#10182b 70%);border:1px solid #344463;border-radius:22px;padding:28px;box-shadow:0 25px 80px #0005}
+    .monogram{width:68px;height:68px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--orange));color:#081123;font-size:27px;font-weight:900;margin-bottom:23px}
+    .hero-card h3{margin:0 0 7px;font-size:22px}.hero-card p{color:var(--muted);margin:0}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.stat{padding:14px 10px;border-radius:12px;background:#ffffff08;border:1px solid #ffffff10}.stat strong{display:block;font-size:23px;color:white}.stat small{color:var(--muted);font-size:11px}
+    section{padding:72px 0;border-top:1px solid #ffffff10}.section-head{max-width:720px;margin-bottom:30px}.kicker{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    h2{font-size:clamp(30px,4vw,43px);letter-spacing:-.035em;line-height:1.15;margin:8px 0 12px}.section-head p,.muted{color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:25px}
+    .panel p{color:var(--muted);margin-top:0}.focus-list{display:grid;gap:13px}.focus-item{display:flex;gap:12px;align-items:flex-start}.check{color:var(--green);font-weight:900}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill h3{margin:0 0 13px;font-size:17px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:13px;color:#cbd8ee;border:1px solid #34435e;background:#ffffff08;padding:6px 10px;border-radius:8px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{background:linear-gradient(145deg,#131f36,#0f1728);border:1px solid var(--line);border-radius:17px;padding:24px;display:flex;flex-direction:column;min-height:220px}
+    .project-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.project-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:11px;background:#6ea8ff1b;color:var(--blue);font-size:19px}
+    .project h3{margin:0 0 8px;font-size:19px}.project-shot{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);margin:8px 0 15px}.project-note{font-size:12px;color:var(--muted);margin-top:8px}.project p{color:var(--muted);margin:0 0 18px}.project .tags{margin-top:auto}
+    .timeline{display:grid;gap:15px}.role{display:grid;grid-template-columns:170px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line)}.role:last-child{border:0}.date{color:var(--blue);font-size:13px;font-weight:700}.role h3{margin:0;font-size:18px}.role .company{color:var(--orange);font-size:14px;margin:2px 0 8px}.role p{margin:0;color:var(--muted)}
+    .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu h3{margin:0 0 5px}.edu p{margin:0;color:var(--muted)}
+    .contact{background:linear-gradient(135deg,#142442,#10182b);border:1px solid #344563;border-radius:22px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{margin-top:0}.contact p{color:var(--muted);margin-bottom:0}
+    footer{padding:28px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:65px 0}.hero-card{max-width:500px}.about-grid,.skills{grid-template-columns:1fr 1fr}.navlinks{display:none;position:absolute;top:71px;left:0;right:0;padding:20px;background:#080d1b;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.hero{gap:28px}.stats{grid-template-columns:repeat(3,1fr)}.about-grid,.skills,.projects,.edu-grid{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:6px}.contact{align-items:flex-start;flex-direction:column}section{padding:55px 0}.navlinks{gap:14px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#home">NOUFAL<span>.</span></a>
+      <div class="navlinks" id="navlinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+      <button class="menu" aria-label="Toggle navigation" onclick="document.getElementById('navlinks').classList.toggle('open')">Menu</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Available for opportunities · Immediate joining</div>
+      <h1>Building reliable software.<br><span>Creating practical AI.</span></h1>
+      <p class="lead">I'm Noufal V — a Senior Full Stack Developer and AI Engineer with 12+ years of software development experience, including 2+ years focused on AI-powered applications, custom agents, and Generative AI solutions.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work</a>
+        <a class="btn" href="https://github.com/noufalv786" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="monogram">NV</div>
+      <h3>Noufal V</h3>
+      <p>Senior Full Stack Developer<br>AI Engineer · Generative AI</p>
+      <div class="stats">
+        <div class="stat"><strong>12+</strong><small>Years in software</small></div>
+        <div class="stat"><strong>2+</strong><small>Years in AI</small></div>
+        <div class="stat"><strong>20+</strong><small>Technologies*</small></div>
+      </div>
+      <p style="font-size:11px;margin-top:13px">*Illustrative skill breadth; see the skills section for technologies.</p>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="kicker">About me</div><h2>Full-stack engineering meets applied AI.</h2><p>I combine hands-on product development with technical leadership to build useful, maintainable digital solutions.</p></div>
+    <div class="about-grid">
+      <div class="panel"><p>My background spans web application development, backend systems, team leadership, and AI-enabled products. I have worked with modern frontend and backend stacks and more recently built AI workflows involving LLMs, retrieval-augmented generation, document processing, and intelligent matching.</p><p>I enjoy taking a problem from requirements through architecture, implementation, integration, and deployment — with a focus on practical outcomes rather than AI hype.</p></div>
+      <div class="panel focus-list">
+        <div class="focus-item"><span class="check">✓</span><div><strong>AI & Generative AI</strong><br><span class="muted">Custom agents, LLM integration, RAG</span></div></div>
+        <div class="focus-item"><span class="check">✓</span><div><strong>Full Stack Development</strong><br><span class="muted">Frontend, APIs, databases</span></div></div>
+        <div class="focus-item"><span class="check">✓</span><div><strong>Technical Leadership</strong><br><span class="muted">Architecture, delivery, collaboration</span></div></div>
+        <div class="focus-item"><span class="check">✓</span><div><strong>Deployment & Integration</strong><br><span class="muted">Docker, cloud services, webhooks</span></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div class="kicker">Technical toolkit</div><h2>Tools I work with</h2><p>A selection of technologies from my development and AI work.</p></div>
+    <div class="skills">
+      <div class="panel skill"><h3>AI & Data</h3><div class="tags"><span class="tag">Python</span><span class="tag">LLM APIs</span><span class="tag">RAG</span><span class="tag">AI Agents</span><span class="tag">Vector Databases</span><span class="tag">Prompt Engineering</span><span class="tag">DeepSeek</span><span class="tag">OpenAI</span></div></div>
+      <div class="panel skill"><h3>Backend & APIs</h3><div class="tags"><span class="tag">FastAPI</span><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">REST APIs</span><span class="tag">Webhooks</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span></div></div>
+      <div class="panel skill"><h3>Frontend & Delivery</h3><div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">Docker</span><span class="tag">Azure</span><span class="tag">Git</span><span class="tag">Streamlit</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div class="kicker">Selected work</div><h2>Projects & solutions</h2><p>A representative selection of products and systems I have contributed to. Client-sensitive implementation details are intentionally kept high level.</p></div>
+    <div class="projects">
+      <article class="project"><div class="project-top"><span class="project-icon">✦</span><span class="kicker">AI / Automation</span></div><h3>AI Job Automation Platform</h3><p>AI-assisted job discovery across multiple job sources, CV parsing, personalized matching and ranking, tailored CV and cover-letter generation, and automated application workflows.</p><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag">Docker</span></div><a class="btn" style="margin-top:18px;align-self:flex-start" href="ai-job-automation.html">View project case study ↗</a></article>
+      <article class="project"><div class="project-top"><span class="project-icon">◈</span><span class="kicker">Custom AI</span></div><h3>Custom AI Agents & Assistants</h3><p>Developed AI-powered assistant workflows that connect language models with application data and backend services to support task-specific experiences.</p><div class="tags"><span class="tag">LLM APIs</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Agent workflows</span></div></article>
+      <article class="project"><div class="project-top"><span class="project-icon">◎</span><span class="kicker">Customer Engagement</span></div><h3>AI-Driven Customer Engagement Platform</h3><p>A unified customer engagement dashboard bringing together AI agents, CRM, WhatsApp inbox, campaigns, calendar, reports, knowledge base, team and billing modules.</p><div class="tags"><span class="tag">AI Agents</span><span class="tag">CRM</span><span class="tag">WhatsApp</span><span class="tag">Customer Analytics</span></div><a class="btn" style="margin-top:18px;align-self:flex-start" href="eraai-customer-engagement.html">View project case study ↗</a></article>
+      <article class="project"><div class="project-top"><span class="project-icon">⌘</span><span class="kicker">Integration</span></div><h3>Social Messaging Automation</h3><p>Worked on API and webhook integrations for social messaging and comment workflows, including event handling and AI-assisted response routing.</p><div class="tags"><span class="tag">REST APIs</span><span class="tag">Webhooks</span><span class="tag">Laravel</span><span class="tag">FastAPI</span></div></article>
+      <article class="project"><div class="project-top"><span class="project-icon">🍽</span><span class="kicker">Food Ordering</span></div><h3>QamQam – Food Ordering Application</h3><p>A food-ordering application project focused on enabling customers to explore food options and place orders through a digital ordering experience. Detailed modules and your individual contribution will be added after confirmation.</p><div class="tags"><span class="tag">Food Ordering</span><span class="tag">Online Ordering</span><span class="tag">Web Application</span></div><a class="btn" style="margin-top:18px;align-self:flex-start" href="qamqam-food-ordering.html">View project case study ↗</a></article>
+      <article class="project"><div class="project-top"><span class="project-icon">▦</span><span class="kicker">Enterprise Web</span></div><h3>HRMS & Business Applications</h3><p>A workforce management platform with staff, HR, recruitment, contracts, attendance, leave, payroll and document management modules.</p><div class="tags"><span class="tag">HRMS</span><span class="tag">Enterprise Web</span><span class="tag">Workforce Management</span></div><a class="btn" style="margin-top:18px;align-self:flex-start" href="hrms-management.html">View project case study ↗</a></article>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <div class="section-head"><div class="kicker">Career journey</div><h2>Professional experience</h2><p>Experience across AI products, enterprise platforms, and full-stack application development.</p></div>
+    <div class="panel timeline">
+      <div class="role"><div class="date">2026 – Present</div><div><h3>AI Engineer / Consultant</h3><div class="company">ERA AI · Part-time engagement</div><p>Contributed to AI-powered application workflows and custom agent solutions using Python, FastAPI, React, Laravel, and PostgreSQL.</p></div></div>
+      <div class="role"><div class="date">2025 – 2026</div><div><h3>AI Engineer</h3><div class="company">Jobx.ai</div><p>Worked on AI-driven job automation, CV parsing, job matching, vector search, LLM-based scoring, and application workflows.</p></div></div>
+      <div class="role"><div class="date">2023 – 2025</div><div><h3>Technical Lead</h3><div class="company">Awtad.sa</div><p>Led development of HRMS and business application capabilities, coordinating technical implementation and delivery.</p></div></div>
+      <div class="role"><div class="date">2020 – 2022</div><div><h3>Full Stack Developer</h3><div class="company">CloudGate.sa</div><p>Developed and maintained web applications and customer-facing digital solutions across multiple projects.</p></div></div>
+      <div class="role"><div class="date">2015 – 2020</div><div><h3>Full Stack Developer</h3><div class="company">Alnahda Tech</div><p>Built web applications using React, Laravel, and MySQL, contributing across frontend and backend development.</p></div></div>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div class="kicker">Education & credentials</div><h2>Learning and development</h2></div>
+    <div class="edu-grid">
+      <div class="panel edu"><h3>Master of Computer Applications (MCA)</h3><p>Mahatma Gandhi University · 2012</p></div>
+      <div class="panel edu"><h3>Professional Scrum Master (PSM)</h3><p>Professional certification</p></div>
+      <div class="panel edu"><h3>Data Science Consultant</h3><p>Certification</p></div>
+      <div class="panel edu"><h3>Languages</h3><p>English · Malayalam · Arabic</p></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact"><div><div class="kicker">Let's connect</div><h2>Have a role or project in mind?</h2><p>I'm open to AI Engineering, Generative AI, Python backend, and Senior Full Stack opportunities.</p></div><div class="actions" style="margin:0"><a class="btn primary" href="https://github.com/noufalv786" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Noufal V. Built with HTML, CSS & JavaScript.</span><span>Hosted with GitHub Pages</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
+</body>
+</html>
