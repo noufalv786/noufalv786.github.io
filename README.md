@@ -1,3 +1,4 @@
+
 # Noufal V — GitHub Pages Portfolio
 
 Responsive portfolio website built with HTML, CSS and JavaScript. No build tools or dependencies are required.
@@ -27,3 +28,4 @@ Responsive portfolio website built with HTML, CSS and JavaScript. No build tools
 - `ai-job-automation.html` — AI job automation platform
 - `hrms-management.html` — HRMS and workforce management platform
 - `qamqam-food-ordering.html` — QamQam food ordering application (details pending confirmation)
+
